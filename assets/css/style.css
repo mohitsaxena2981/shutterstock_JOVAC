@@ -1676,4 +1676,22 @@ body.active { overflow: hidden; }
 }
 
 
+@media (max-width: 477px){
+
+  .multimedia .video{
+    width: 350px;
+
+  }
+  /* .multimedia .detail-title{
+
+    width: 100px;
+
+  }
+  .video{
+    padding: 10px 10px;
+
+  } */
+  
+}
+
  
