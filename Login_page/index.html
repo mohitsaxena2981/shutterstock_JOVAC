@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="content container">
+        <div id="form_container">
+            <div id="form_header_container">
+                <h2 id="form_header">Login</h2>
+            </div>
+
+            <div id="form_content_container">
+                <div id="form_inner_content_container">
+                    <input type="text" id="full_name" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="text" id="movie_genre" placeholder="Movie Genre">
+
+                    <div id="button_container">
+                        <button onclick="login()">Login</button>
+                        <button onclick="register()">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
+</script>
+<script src="index.js"></script>
+</html>
